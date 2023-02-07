@@ -1,0 +1,126 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+:root{
+  --bg-color:#fafafa;
+  --bg-gradient:linear-gradient(
+    105deg,
+    rgba(184,203,237,1) 0%,
+    rgba(222,245,221,1) 100%,
+  );
+  --bg-border:linear-gradient(
+    90deg,
+    rgba(124,166,252,1) 0%,
+    rgba(119,235,129,1) 100%,
+  )
+}
+body{
+  font-family: -apple-system,system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+  background: var(--bg-gradient);
+  display: grid;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  place-items: center;
+}
+
+header input{
+  background-color: rgb(236, 240, 245);
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 10px 10px;
+  width: 88vw;
+}
+
+footer{
+  display: flex;
+  background: var(--bg-border);
+  padding: 10px;
+  width: 100%;
+  justify-content: space-around;
+  position: absolute;
+}
+
+.footerLink{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #292929;
+  margin: 10px 0;
+  font-size: 12px;
+  
+}
+
+.footerLink img{
+  width: 35px;
+  margin: 5px 0;
+}
+.app{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 80vh;
+  width: 100%;
+}
+.app main{
+  padding: 10px;
+  height: 90%;
+  width: 100%;
+  overflow: auto;
+}
+
+.listItem{
+  display: flex;
+  border-bottom: 3px solid #e4e4e4;
+  padding: 10px;
+  text-decoration: none;
+  align-items: center;
+}
+.listItem>:first-child{
+  margin-right: 15px;
+}
+.listItem>:last-child{
+  margin: 0;
+}
+.listIcon{
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+.listItemText{
+  flex-grow: 2;
+}
+.nobmre{
+  text-decoration: none;
+  color: aqua;
+  -webkit-text-fill-color:transparent ;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 11px;
+  font-weight: bold;
+}
+.listItemText>:last-child{
+  color: grey;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  display: block;
+}
+.pokemon{
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1;
+}
+.pokemon h1{
+  background: #e4e4e4;
+  color: aquamarine;
+  font-size: smaller;
+}
